@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
-import '../node_modules/bulma/css/bulma.css'
-import reducer from './reducer'
-import task from './task'
+import TodoItem from "./Components/TodoItem";
+import TodoList from './Components/TodoList'
 
 
 
@@ -16,12 +15,15 @@ class App extends React.Component {
     render() {
         return (
             <div >
-            <reducer/>
-            <task/>
+        <TodoList/>
+        <TodoItem/>
             </div>
         );
     }
 }
+
+
+
 export default App;
 
 
